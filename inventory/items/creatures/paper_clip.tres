@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://ct1vrdq083kml"]
+
+[ext_resource type="Script" path="res://addons/SwiftInv/Scripts/InventoryItem.gd" id="1_ildrm"]
+[ext_resource type="Texture2D" uid="uid://cnts2v7y5hfen" path="res://personal_animations/card_paperClip.png" id="2_ymwqg"]
+
+[resource]
+script = ExtResource("1_ildrm")
+name = "creature_paper_clip"
+description = ""
+texture = ExtResource("2_ymwqg")
+amount = 1
+max_stack = 24

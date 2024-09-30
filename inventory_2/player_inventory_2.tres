@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Inv_2" load_steps=4 format=3 uid="uid://bsnvpej814xa3"]
+
+[ext_resource type="Script" path="res://addons/SwiftInv/Scripts/InventoryItem.gd" id="1_hn2k1"]
+[ext_resource type="Script" path="res://inventory_2/inventory_2.gd" id="1_qp3y1"]
+[ext_resource type="Resource" uid="uid://de48ncsgo6e8m" path="res://inventory_2/items/powers/fire_ball.tres" id="2_l4m27"]
+
+[resource]
+script = ExtResource("1_qp3y1")
+item_2 = Array[ExtResource("1_hn2k1")]([ExtResource("2_l4m27"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])

@@ -1,0 +1,226 @@
+[gd_scene load_steps=10 format=3 uid="uid://cfuov8b4g3rha"]
+
+[ext_resource type="Texture2D" uid="uid://xeh6x0cf064f" path="res://personal_animations/hotbar_background.png" id="1_7ohow"]
+[ext_resource type="Texture2D" uid="uid://dilskfho1lroo" path="res://personal_animations/hotbar_creature_slot.png" id="2_5g6t4"]
+[ext_resource type="Script" path="res://hotbar/clickable_slot.gd" id="3_6rxut"]
+[ext_resource type="Texture2D" uid="uid://c720vod4ldw05" path="res://personal_animations/hotbar_power_slot.png" id="3_pbxsb"]
+[ext_resource type="Texture2D" uid="uid://b7lpxnhhydxfj" path="res://personal_animations/hotbar_trap_slot.png" id="4_4kmyp"]
+[ext_resource type="Texture2D" uid="uid://chrdcpobaees1" path="res://personal_animations/hotbar_quest_slot.png" id="5_aodbu"]
+[ext_resource type="Texture2D" uid="uid://bl7l1kteov23t" path="res://personal_animations/hotbar_curse_slot.png" id="6_xjao7"]
+[ext_resource type="Texture2D" uid="uid://bdoflsrkux5f4" path="res://personal_animations/hotbar_equipment_slot.png" id="7_7jdvh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iqse2"]
+size = Vector2(42, 64)
+
+[node name="hotbar" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -138.0
+offset_top = -80.0
+offset_right = 138.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_7ohow")
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.02
+anchor_top = 0.074
+anchor_right = 0.979
+anchor_bottom = 0.926
+offset_left = -5.52
+offset_top = -5.92
+offset_right = 5.79599
+offset_bottom = 5.92
+grow_horizontal = 2
+grow_vertical = 2
+columns = 6
+
+[node name="creature_hotbar" type="Panel" parent="NinePatchRect/GridContainer"]
+layout_direction = 2
+layout_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="creature_sprite" type="Sprite2D" parent="NinePatchRect/GridContainer/creature_hotbar"]
+texture_filter = 1
+position = Vector2(28, 40)
+scale = Vector2(1, 1)
+texture = ExtResource("2_5g6t4")
+
+[node name="clickable_slot" type="Area2D" parent="NinePatchRect/GridContainer/creature_hotbar/creature_sprite"]
+script = ExtResource("3_6rxut")
+
+[node name="slot_collision" type="CollisionShape2D" parent="NinePatchRect/GridContainer/creature_hotbar/creature_sprite/clickable_slot"]
+position = Vector2(-1.90735e-06, 7.62939e-06)
+shape = SubResource("RectangleShape2D_iqse2")
+
+[node name="CenterContainer" type="CenterContainer" parent="NinePatchRect/GridContainer/creature_hotbar"]
+custom_minimum_size = Vector2(42, 64)
+offset_left = 7.0
+offset_top = 8.0
+offset_right = 49.0
+offset_bottom = 72.0
+
+[node name="Panel" type="Panel" parent="NinePatchRect/GridContainer/creature_hotbar/CenterContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="item_display" type="Sprite2D" parent="NinePatchRect/GridContainer/creature_hotbar/CenterContainer/Panel"]
+
+[node name="power_hotbar" type="Panel" parent="NinePatchRect/GridContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="power_sprite" type="Sprite2D" parent="NinePatchRect/GridContainer/power_hotbar"]
+texture_filter = 1
+position = Vector2(68, 40)
+scale = Vector2(1, 1)
+texture = ExtResource("3_pbxsb")
+
+[node name="clickable_slot" type="Area2D" parent="NinePatchRect/GridContainer/power_hotbar/power_sprite"]
+
+[node name="slot_collision" type="CollisionShape2D" parent="NinePatchRect/GridContainer/power_hotbar/power_sprite/clickable_slot"]
+position = Vector2(-1.90735e-06, 0)
+shape = SubResource("RectangleShape2D_iqse2")
+
+[node name="CenterContainer" type="CenterContainer" parent="NinePatchRect/GridContainer/power_hotbar"]
+custom_minimum_size = Vector2(42, 64)
+offset_left = 47.0
+offset_top = 8.0
+offset_right = 89.0
+offset_bottom = 72.0
+
+[node name="Panel" type="Panel" parent="NinePatchRect/GridContainer/power_hotbar/CenterContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="item_display" type="Sprite2D" parent="NinePatchRect/GridContainer/power_hotbar/CenterContainer/Panel"]
+
+[node name="trap_hotbar" type="Panel" parent="NinePatchRect/GridContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="trap_sprite" type="Sprite2D" parent="NinePatchRect/GridContainer/trap_hotbar"]
+texture_filter = 1
+position = Vector2(108, 40)
+scale = Vector2(1, 1)
+texture = ExtResource("4_4kmyp")
+
+[node name="clickable_slot" type="Area2D" parent="NinePatchRect/GridContainer/trap_hotbar/trap_sprite"]
+
+[node name="slot_collision" type="CollisionShape2D" parent="NinePatchRect/GridContainer/trap_hotbar/trap_sprite/clickable_slot"]
+shape = SubResource("RectangleShape2D_iqse2")
+
+[node name="CenterContainer" type="CenterContainer" parent="NinePatchRect/GridContainer/trap_hotbar"]
+custom_minimum_size = Vector2(42, 64)
+offset_left = 87.0
+offset_top = 8.0
+offset_right = 129.0
+offset_bottom = 72.0
+
+[node name="Panel" type="Panel" parent="NinePatchRect/GridContainer/trap_hotbar/CenterContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="item_display" type="Sprite2D" parent="NinePatchRect/GridContainer/trap_hotbar/CenterContainer/Panel"]
+
+[node name="quest_hotbar" type="Panel" parent="NinePatchRect/GridContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="quest_sprite" type="Sprite2D" parent="NinePatchRect/GridContainer/quest_hotbar"]
+texture_filter = 1
+position = Vector2(148, 40)
+scale = Vector2(1, 1)
+texture = ExtResource("5_aodbu")
+
+[node name="clickable_slot" type="Area2D" parent="NinePatchRect/GridContainer/quest_hotbar/quest_sprite"]
+
+[node name="slot_collision" type="CollisionShape2D" parent="NinePatchRect/GridContainer/quest_hotbar/quest_sprite/clickable_slot"]
+position = Vector2(-1.90735e-06, 0)
+shape = SubResource("RectangleShape2D_iqse2")
+
+[node name="CenterContainer" type="CenterContainer" parent="NinePatchRect/GridContainer/quest_hotbar"]
+custom_minimum_size = Vector2(42, 64)
+offset_left = 127.0
+offset_top = 8.0
+offset_right = 169.0
+offset_bottom = 72.0
+
+[node name="Panel" type="Panel" parent="NinePatchRect/GridContainer/quest_hotbar/CenterContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="item_display" type="Sprite2D" parent="NinePatchRect/GridContainer/quest_hotbar/CenterContainer/Panel"]
+
+[node name="curse_hotbar" type="Panel" parent="NinePatchRect/GridContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="curse_sprite" type="Sprite2D" parent="NinePatchRect/GridContainer/curse_hotbar"]
+texture_filter = 1
+position = Vector2(188, 40)
+scale = Vector2(1, 1)
+texture = ExtResource("6_xjao7")
+
+[node name="clickable_slot" type="Area2D" parent="NinePatchRect/GridContainer/curse_hotbar/curse_sprite"]
+
+[node name="slot_collision" type="CollisionShape2D" parent="NinePatchRect/GridContainer/curse_hotbar/curse_sprite/clickable_slot"]
+position = Vector2(-1.90735e-06, 0)
+shape = SubResource("RectangleShape2D_iqse2")
+
+[node name="CenterContainer" type="CenterContainer" parent="NinePatchRect/GridContainer/curse_hotbar"]
+custom_minimum_size = Vector2(42, 64)
+offset_left = 167.0
+offset_top = 8.0
+offset_right = 209.0
+offset_bottom = 72.0
+
+[node name="Panel" type="Panel" parent="NinePatchRect/GridContainer/curse_hotbar/CenterContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="item_display" type="Sprite2D" parent="NinePatchRect/GridContainer/curse_hotbar/CenterContainer/Panel"]
+
+[node name="equipment_hotbar" type="Panel" parent="NinePatchRect/GridContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="equipment_sprite" type="Sprite2D" parent="NinePatchRect/GridContainer/equipment_hotbar"]
+texture_filter = 1
+position = Vector2(228, 40)
+scale = Vector2(1, 1)
+texture = ExtResource("7_7jdvh")
+
+[node name="clickable_slot" type="Area2D" parent="NinePatchRect/GridContainer/equipment_hotbar/equipment_sprite"]
+
+[node name="slot_collision" type="CollisionShape2D" parent="NinePatchRect/GridContainer/equipment_hotbar/equipment_sprite/clickable_slot"]
+position = Vector2(-1.90735e-06, 0)
+shape = SubResource("RectangleShape2D_iqse2")
+
+[node name="CenterContainer" type="CenterContainer" parent="NinePatchRect/GridContainer/equipment_hotbar"]
+custom_minimum_size = Vector2(42, 64)
+offset_left = 207.0
+offset_top = 8.0
+offset_right = 249.0
+offset_bottom = 72.0
+
+[node name="Panel" type="Panel" parent="NinePatchRect/GridContainer/equipment_hotbar/CenterContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="item_display" type="Sprite2D" parent="NinePatchRect/GridContainer/equipment_hotbar/CenterContainer/Panel"]
+
+[connection signal="input_event" from="NinePatchRect/GridContainer/creature_hotbar/creature_sprite/clickable_slot" to="NinePatchRect/GridContainer/creature_hotbar/creature_sprite/clickable_slot" method="_on_input_event"]
+[connection signal="mouse_entered" from="NinePatchRect/GridContainer/creature_hotbar/creature_sprite/clickable_slot" to="NinePatchRect/GridContainer/creature_hotbar/creature_sprite/clickable_slot" method="_on_mouse_entered"]
