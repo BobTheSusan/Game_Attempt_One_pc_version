@@ -343,7 +343,7 @@ libraries = {
 }
 script = ExtResource("8_gbr35")
 
-[node name="Card DIsplay" parent="ChestBody2D/chest_openable" instance=ExtResource("8_pyayo")]
+[node name="Card_Display" parent="ChestBody2D/chest_openable" instance=ExtResource("8_pyayo")]
 offset_left = -260.0
 offset_top = -460.0
 offset_right = -260.0
