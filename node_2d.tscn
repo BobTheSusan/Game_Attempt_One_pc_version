@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://mrxwgtaadb4r"]
+[gd_scene load_steps=28 format=4 uid="uid://mrxwgtaadb4r"]
 
 [ext_resource type="Texture2D" uid="uid://ck4eja17iod01" path="res://personal_animations/tile_map_3.png" id="1_243pi"]
 [ext_resource type="Script" path="res://character_body_2d.gd" id="1_dyejd"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bn2gtodrayvng" path="res://personal_animations/notification_sheet .png" id="7_tfw40"]
 [ext_resource type="Script" path="res://chest_notifcation.gd" id="8_3vqci"]
 [ext_resource type="Script" path="res://chest_animation_2.gd" id="8_gbr35"]
+[ext_resource type="PackedScene" uid="uid://baov2fgqhixvk" path="res://card_display/card_display.tscn" id="8_pyayo"]
 [ext_resource type="Script" path="res://inventory_2/inventory_ui_2.gd" id="12_akf5b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t3ayl"]
@@ -341,6 +342,12 @@ libraries = {
 "": SubResource("AnimationLibrary_cyg5c")
 }
 script = ExtResource("8_gbr35")
+
+[node name="Card DIsplay" parent="ChestBody2D/chest_openable" instance=ExtResource("8_pyayo")]
+offset_left = -260.0
+offset_top = -460.0
+offset_right = -260.0
+offset_bottom = -460.0
 
 [node name="chest_notifcation" type="Sprite2D" parent="ChestBody2D"]
 texture_filter = 1
