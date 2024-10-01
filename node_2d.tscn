@@ -344,6 +344,7 @@ libraries = {
 script = ExtResource("8_gbr35")
 
 [node name="Card_Display_1" parent="ChestBody2D/chest_openable" instance=ExtResource("8_pyayo")]
+visible = false
 offset_left = -198.0
 offset_top = -260.0
 offset_right = 222.0
