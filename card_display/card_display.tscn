@@ -4,18 +4,21 @@
 [ext_resource type="Script" path="res://card_display/card_display.gd" id="1_yusq6"]
 
 [node name="Card DIsplay" type="Control"]
+clip_contents = true
+custom_minimum_size = Vector2(420, 640)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -732.0
+offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yusq6")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 42.0
-offset_bottom = 64.0
-scale = Vector2(10, 10)
+offset_right = 420.0
+offset_bottom = 640.0
 texture = ExtResource("1_ff5wl")
 stretch_mode = 4
