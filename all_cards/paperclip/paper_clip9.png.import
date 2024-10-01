@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://m4btd22iylv1"
-path="res://.godot/imported/dylan_the_destroyer.png-0a7f577bb01284f84f11d160e6e3d49f.ctex"
+uid="uid://bidtt12tv44lu"
+path="res://.godot/imported/paper_clip9.png-13a6f1d5e506d95a15704c6dece8a876.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://inventory/items/creatures/dylan_the_destroyer.png"
-dest_files=["res://.godot/imported/dylan_the_destroyer.png-0a7f577bb01284f84f11d160e6e3d49f.ctex"]
+source_file="res://all_cards/paperclip/paper_clip9.png"
+dest_files=["res://.godot/imported/paper_clip9.png-13a6f1d5e506d95a15704c6dece8a876.ctex"]
 
 [params]
 

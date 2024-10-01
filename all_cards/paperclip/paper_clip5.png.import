@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cm3wwpgh13qtq"
-path="res://.godot/imported/eye_chest.png-41ad2670d8b382eb56fc84931264c039.ctex"
+uid="uid://c5xc3vb4f1b4i"
+path="res://.godot/imported/paper_clip5.png-c8311c215f2696a3386c50d4f16bf4dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://inventory/items/creatures/eye_chest.png"
-dest_files=["res://.godot/imported/eye_chest.png-41ad2670d8b382eb56fc84931264c039.ctex"]
+source_file="res://all_cards/paperclip/paper_clip5.png"
+dest_files=["res://.godot/imported/paper_clip5.png-c8311c215f2696a3386c50d4f16bf4dc.ctex"]
 
 [params]
 

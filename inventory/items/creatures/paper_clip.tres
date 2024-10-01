@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://ct1vrdq083kml"]
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://bcq63wboh1bgk"]
 
 [ext_resource type="Script" path="res://addons/SwiftInv/Scripts/InventoryItem.gd" id="1_ildrm"]
 [ext_resource type="Texture2D" uid="uid://cnts2v7y5hfen" path="res://personal_animations/card_paperClip.png" id="2_ymwqg"]

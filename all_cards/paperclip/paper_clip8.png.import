@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1iqb71pwjp3h"
-path="res://.godot/imported/tadpole.png-65aabceebe21bc081506b843ab5b1e66.ctex"
+uid="uid://du1d5ltov3dsq"
+path="res://.godot/imported/paper_clip8.png-c7d529ab2869be6b59b71bc6b00385f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://inventory/items/creatures/tadpole.png"
-dest_files=["res://.godot/imported/tadpole.png-65aabceebe21bc081506b843ab5b1e66.ctex"]
+source_file="res://all_cards/paperclip/paper_clip8.png"
+dest_files=["res://.godot/imported/paper_clip8.png-c7d529ab2869be6b59b71bc6b00385f7.ctex"]
 
 [params]
 
