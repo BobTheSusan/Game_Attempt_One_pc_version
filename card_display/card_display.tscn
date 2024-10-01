@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://baov2fgqhixvk"]
 
-[ext_resource type="Texture2D" uid="uid://djwvoyfmyd27l" path="res://inventory_2/items/powers/fire_ball.png" id="1_ff5wl"]
-[ext_resource type="Script" path="res://card_display/card_display.gd" id="1_yusq6"]
+[ext_resource type="Texture2D" uid="uid://1iqb71pwjp3h" path="res://inventory/items/creatures/tadpole.png" id="1_ni23y"]
+[ext_resource type="Texture2D" uid="uid://cm3wwpgh13qtq" path="res://inventory/items/creatures/eye_chest.png" id="2_kka4p"]
 
 [node name="Card DIsplay" type="Control"]
 clip_contents = true
@@ -14,11 +14,38 @@ offset_right = -732.0
 offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_yusq6")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(1260, 640)
 layout_mode = 0
-offset_right = 420.0
-offset_bottom = 640.0
-texture = ExtResource("1_ff5wl")
-stretch_mode = 4
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="tadpole" type="Sprite2D" parent="HBoxContainer"]
+texture_filter = 1
+position = Vector2(209, 320)
+scale = Vector2(10, 10)
+texture = ExtResource("1_ni23y")
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer/tadpole"]
+offset_left = -21.0
+offset_top = -32.0
+offset_right = 21.0
+offset_bottom = 32.0
+
+[node name="eye_chest" type="Sprite2D" parent="HBoxContainer"]
+position = Vector2(629, 323)
+scale = Vector2(10, 10)
+texture = ExtResource("2_kka4p")
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer/eye_chest"]
+offset_left = 21.7
+offset_top = 3.7
+offset_right = 61.7
+offset_bottom = 43.7
+
+[node name="dylan_the_destroyer" type="Sprite2D" parent="HBoxContainer"]
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer/dylan_the_destroyer"]
+offset_right = 40.0
+offset_bottom = 40.0
