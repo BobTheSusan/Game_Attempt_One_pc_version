@@ -327,9 +327,10 @@ scale = Vector2(10, 10.001)
 texture = ExtResource("5_055a1")
 hframes = 2
 
-[node name="chest_openable" type="Area2D" parent="ChestBody2D"]
+[node name="chest_openable" type="Area2D" parent="ChestBody2D" node_paths=PackedStringArray("Card_Display")]
 position = Vector2(93, -230)
 script = ExtResource("6_a1r1c")
+Card_Display = NodePath("Card_Display_1")
 
 [node name="chest_range" type="CollisionShape2D" parent="ChestBody2D/chest_openable"]
 position = Vector2(-85, 303)
