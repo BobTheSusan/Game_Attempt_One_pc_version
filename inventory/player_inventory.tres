@@ -1,9 +1,8 @@
-[gd_resource type="Resource" script_class="Inv" load_steps=4 format=3 uid="uid://baojs4r3qii3c"]
+[gd_resource type="Resource" script_class="Inv" load_steps=3 format=3 uid="uid://baojs4r3qii3c"]
 
 [ext_resource type="Script" path="res://addons/SwiftInv/Scripts/InventoryItem.gd" id="1_rlofc"]
 [ext_resource type="Script" path="res://inventory/inventory.gd" id="2_05v8e"]
-[ext_resource type="Resource" uid="uid://ct1vrdq083kml" path="res://inventory/items/creatures/paper_clip.tres" id="2_co612"]
 
 [resource]
 script = ExtResource("2_05v8e")
-item = Array[ExtResource("1_rlofc")]([ExtResource("2_co612"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
+item = Array[ExtResource("1_rlofc")]([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])

@@ -45,6 +45,7 @@ custom_minimum_size = Vector2(420, 640)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("2_tu7dr")
 stretch_mode = 0
 
@@ -54,5 +55,6 @@ custom_minimum_size = Vector2(420, 640)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("3_ph5we")
 stretch_mode = 0

@@ -116,3 +116,6 @@ layout_mode = 2
 
 [node name="inventory_slot24" parent="NinePatchRect/GridContainer" instance=ExtResource("3_xy7uv")]
 layout_mode = 2
+
+[connection signal="mouse_entered" from="NinePatchRect/GridContainer/inventory_slot1" to="NinePatchRect/GridContainer/inventory_slot1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="NinePatchRect/GridContainer/inventory_slot1" to="NinePatchRect/GridContainer/inventory_slot1" method="_on_mouse_exited"]
